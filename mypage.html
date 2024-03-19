@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> mypage</title>
+        <link rel="stylesheet" href="mypage.css">
+        
+    </head>
+    <body>
+      <h1 class="heading"> Let's Work together & Explore new things.</h1>
+
+      <nav >
+        <div><button class="navbar-toggler" onclick="toggleNavbar()">☰</button></div>
+        <div class="nav-items">
+          <button id="register" onclick="displayTab('register-1')"> Register </button>
+          <button id="About" onclick= "displayTab('About-1')"> About</button>
+          <button id="services" onclick="displayTab('services-1')"> Services</button>
+          <button id="games" onclick="displayTab('game')">Game</button>
+          <button id="Person"  onclick="displayTab('person-details')" > Person</button>
+        </div>
+      </nav>
+
+      <div class="tab-1" id="register-1" style="display:none;">
+        
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">First Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                </div>
+                <div class="form-group">
+                  <label for="name">Last Name</label>
+                  <input type="text" id="name" name="name" required>
+
+              </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phonenumber</label>
+                    <input type="number" id="phonenumber" name="phonenumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    
+
+    <!----About------------>
+    <div class="tab-1" id="About-1">
+      
+        <p>
+          
+          Exploring new places is an invigorating journey that ignites a sense of adventure 
+          within us. Each step into the unknown unravels a tapestry of unique sights, sounds, 
+          and sensations, offering a kaleidoscope of experiences waiting to be discovered. 
+          Whether wandering through bustling city streets teeming with life or trekking through 
+          serene natural landscapes untouched by human hands, the thrill of exploration is ever-present,
+           fueling our curiosity and expanding our horizons.
+        </p>
+        <p>
+        
+          Venturing into unfamiliar territories fosters a profound connection with the world
+           around us, enriching our understanding of diverse cultures and traditions. As we 
+           immerse ourselves in new environments, we embrace the opportunity to engage with locals,
+            share stories, and forge meaningful connections that transcend geographical boundaries.
+             Through these interactions, we gain insights into different ways of life, broadening our 
+             perspectives and fostering a deep appreciation for the intricacies of human existence.
+          </p>
+          <p>
+            
+            At its core, exploring new places is a voyage of self-discovery, a journey that challenges us 
+            to step outside our comfort zones and embrace the unknown. As we navigate through uncharted territories,
+             we confront our fears, overcome obstacles, and unearth hidden facets of our own resilience and adaptability. 
+             With each adventure, we unravel layers of our identity, piecing together a mosaic of experiences that shape.
+
+          </p>
+    </div>
+      <div class="tab-1" id="services-1">
+
+          1.Consultation Services<br>
+          2.Training and Development<br>
+          3.Project Management Solutions<br>
+          4.Technology and IT Services<br>
+          5.Marketing and Branding Solutions<br>
+          6.Customer Support and Relations<br>
+          7.Research and Analysis<br>
+          8.Financial Advisory Services<br>
+   </div>
+<div class="tab-1" id="person-details">
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+    <tbody id="personsDetails"></tbody>
+  </table>
+  </div>
+
+   <div class="tab-1" id="game">
+    <div class="container">
+      <h2 id="count">0</h2>
+      <div class="buttons">
+        <button id="startButton" class="start" onclick="startGame()">Start</button>
+        <button id="stopButton" class="stop" onclick="stopGame()">Stop</button>
+        <button id="pauseResumeButton" class="pause" onclick="pauseResumeGame()">Pause</button>
+      </div>
+    </div>
+  </div>
+
+
+   
+   
+    
+    <script src="mypage.js"> </script>
+
+    </body>
+    
+   
+    
+  
+    
+</html>
