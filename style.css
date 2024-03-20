@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    background: linear-gradient(to right,#CC95C0,#DBD4B4, #7AA1D2);
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: purple;
+}
+
+.add-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shopping-item {
+    margin-bottom: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.shopping-item.done {
+    text-decoration: line-through;
+    background-color: #76e7a1;
+}
+
+.shopping-item button {
+    position: absolute;
+    top: 5px;
+   right: 5px; 
+    justify-content: center;
+     align-items: center;
+
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    display: flex;
+    /*padding: 10px 10px 10px 10px;*/
+    /* border-radius: 50%; */
+    width: 25px;
+    height: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.shopping-item button:hover {
+    background-color: #c0392b;
+}
+
+.item-counts {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.marked-count {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.unmarked-count {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.total-count {
+    background-color: #3498db;
+    color: #fff;
+}
