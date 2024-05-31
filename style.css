@@ -30,6 +30,7 @@ input[type="text"] {
     flex: 1;
     padding: 10px;
     align-items: center;
+    color: grey;
     border: 1px solid grey;
     border-radius: 5px 0 0 5px;
     outline: none;
@@ -64,41 +65,47 @@ ul {
 }
 
 .shopping-item {
-    margin-bottom: 10px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    position: relative;
-}
-
-.shopping-item.done {
-    text-decoration: line-through;
-    background-color: #76e7a1;
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 10px;
+   padding: 10px;
+   color: white;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: rgb(196, 193, 193);
+   position: relative;
+   
 }
 
 .shopping-item button {
-    position: absolute;
-    top: 5px;
-   right: 5px; 
-    justify-content: center;
-     align-items: center;
-
-    background-color: #e74c3c;
-    color: #fff;
-    border: none;
-    display: flex;
-    /*padding: 10px 10px 10px 10px;*/
-    /* border-radius: 50%; */
-    width: 25px;
-    height: 25px;
-    font-size: 14px;
-    cursor: pointer;
+   position: absolute;
+   top: 5px;
+  right: 5px; 
+   justify-content: center;
+    align-items: center;
+    background-color: rgb(196, 193, 193);
+   color: white;
+   border: none;
+   display: flex;
+   width: 25px;
+   height: 25px;
+   font-size: 14px;
+   cursor: pointer;
 }
 
-.shopping-item button:hover {
-    background-color: #c0392b;
+
+.shopping-item.done {
+    text-decoration: line-through;
+    text-color: white;
+    background-color: #76e7a1;
+    
+
 }
+.shopping-item.done button {
+    background-color: #76e7a1;  
+}
+
 
 .item-counts {
     margin-top: 20px;
